@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metric/Imperial Unit Conversion</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+    </style>
+</head>
+
+<body style="background: #1f2937;">
+    <div id="grad1">
+        <section id="header">
+            <h1>Unit Conversion: Metric/Imperial</h1>
+                <input id="input" type="number" ></input>
+        </section>
+        <br>
+        
+    </div>
+
+    <div>
+        <div id="container">
+            <footer id="footerContent">
+                <ul> 
+                    <li> Length (Meter/Feet)
+                        <p id="m-fValue"> Feet: <span id="outputFeet">0</span></p>
+                            <p id="m-f-result"> </p>
+                                <button id="m-f-button" onclick="meterFunction()">Convert</button>
+                        <li> Volume (Liters/Gallons)
+                            <p id="l-gValue">0</p>
+                                <p id="gallonResult"></p>
+                                    <button id="l-g-button" onclick="literFunction()">Convert</button>
+                            <li>
+                                Mass(Kilograms/Pounds)
+                                <p id="k-pValue">0</p>
+                                    <p id="k-p-result"> </p> 
+                                        <button id="k-p-button" onclick="kilogramsFunction()">Convert</button>
+
+                            </li>
+                        </li>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+
+
+</body>
+<script src="main.js"></script>
+</html>
